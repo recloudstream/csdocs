@@ -1,0 +1,36 @@
+input: 
+output: build
+url: https://cs3docs.pages.dev/
+branding:
+  logo: static/inas.png
+  logoDark: /static/base.png
+  title: CS3Docs
+  label: 
+
+meta:
+  title: " - Cloudstream 3 Documentation"
+
+links:
+  - text: Github
+    link: https://github.com/recloudstream/cloudstream/
+    icon: /static/github.png
+
+  - text: Gitdab
+    link: https://gitdab.com/recloudstream
+    icon: /static/gitdab.svg
+
+  - text: Discord
+    link: https://discord.com/invite/5Hus6fM
+    icon: /static/discord.png
+    target: blank
+
+  - text: Matrix
+    link: https://matrix.to/#/#lagrapps:matrix.org
+    icon: /static/matrix.png
+    target: blank
+
+footer:
+  links:
+    - text: Website by Duckling
+      link: https://github.com/anotherduckling
+  copyright: ""

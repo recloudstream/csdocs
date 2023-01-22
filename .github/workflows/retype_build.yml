@@ -32,9 +32,8 @@ jobs:
 
       - name: Inject custom css and js
         run: |
-          cd ${{ steps.retypebuild.outputs.retype-output-path }}
-          cat .inject/style.css >> resources/css/retype.css
-          cat .inject/code.js >> resources/js/retype.js
+          cat .inject/style.css >> ${{ steps.retypebuild.outputs.retype-output-path }}/resources/css/retype.css
+          cat .inject/code.js >> ${{ steps.retypebuild.outputs.retype-output-path }}/resources/js/retype.js
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

@@ -1,6 +1,6 @@
 ---
 label: For extension developers
-icon: gear
+icon: code
 expanded: false
 ---
 

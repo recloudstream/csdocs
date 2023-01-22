@@ -4,9 +4,14 @@ order: 998
 icon: /static/linux.svg
 ---
 
+# Linux
 You can download this app on Android, Android TV, and FireTV Stick. However, it is unfortunately not avaliable on IOS or on desktop, but you can use tools like [!badge variant="primary" size="l" icon="https://github.com/waydroid.png" text="Waydroid"](https://waydro.id/) or [!badge variant="primary" size="l" icon="https://github.com/anbox.png" text="Anbox"](https://anbox.io/) to emulate android apps on linux.
 
-# Waydroid
+<br />
+<br />
+
+<details>
+    <summary><img src="https://user-images.githubusercontent.com/68516357/213915851-16e76b00-d4b5-4324-8562-027c03979654.png" style="width: 50px;"/><h1> &nbsp; Waydroid<h1></summary>
 
 ## Install WayDroid
 
@@ -206,3 +211,11 @@ export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$
 to the appropriate file `.zshenv` or `.bashrc` or `.profile`
 
 - reboot the system
+      
+</details>
+
+<br />
+ 
+<details>
+    <summary><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Anbox_logo.svg/120px-Anbox_logo.svg.png"  style="width: 45px;"/><h1> &nbsp; Anbox<h1></summary>
+</details>

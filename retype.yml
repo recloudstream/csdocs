@@ -12,6 +12,7 @@ meta:
 
 edit:
   repo: "https://github.com/recloudstream/csdocs/edit/"
+  branch: master
 
 links:
   - text: Github

@@ -1,6 +1,6 @@
 input: 
 output: build
-url: https://cs3docs.pages.dev/
+url: https://docs.cloudstream.cf/
 branding:
   logo: static/inas.png
   logoDark: /static/base.png

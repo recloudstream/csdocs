@@ -10,6 +10,9 @@ branding:
 meta:
   title: " - Cloudstream 3 Documentation"
 
+edit:
+  repo: "https://github.com/recloudstream/csdocs/edit/"
+
 links:
   - text: Github
     link: https://github.com/recloudstream/cloudstream/

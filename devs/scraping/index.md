@@ -11,10 +11,10 @@ If you find any aspect of this guide confusing please open an issue about it and
 
 If you do not know programming at all then this guide will __not__ help you, learn programming! first Real scraping cannot be done by copy pasting with a vauge understanding.
 
-0. [Starting scraping from zero](../starting.md)
-1. [Properly scraping JSON apis often found on sites](../using_apis.md)
-2. [Evading developer tools detection when scraping](../devtools_detectors.md)
-3. [Why your requests fail and how to fix them](../disguising_your_scraper.md)
-4. [Finding links and scraping videos](../finding_video_links.md)
+0. [Starting scraping from zero](starting)
+1. [Properly scraping JSON apis often found on sites](using_apis)
+2. [Evading developer tools detection when scraping](devtools_detectors)
+3. [Why your requests fail and how to fix them](disguising_your_scraper)
+4. [Finding links and scraping videos](finding_video_links)
 
 Once you've read and understood the concepts behind scraping take a look at [a provider for CloudStream](https://github.com/recloudstream/cloudstream-extensions/blob/master/VidstreamBundle/src/main/kotlin/com/lagradost/VidEmbedProvider.kt#L4). I added tons of comments to make every aspect of writing CloudStream providers clear. Even if you're not planning on contributing to Cloudstream looking at the code may help. 

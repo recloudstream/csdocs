@@ -10,7 +10,7 @@ And sometimes its the only way `(eg: the site uses its API to load the content, 
 Anyways, this guide won't teach the same concepts over and over again, <br/>
 so if you can't even make requests to an API then this will not tell you how to do that.
 
-Refer to [starting](../starting.md) on how to make http/https requests.
+Refer to [starting](starting) on how to make http/https requests.
 And yes, this guide expects you to have basic knowledge on both Python and Kotlin.
 
 ### Using an API (and parsing json)
@@ -169,4 +169,4 @@ One thing to note is that you don't need to add all of the json key/value pairs 
 Even though we set `DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES` as `false` it will still error on missing properties. <br/>
 If a json may or may not include some info, make those properties as nullable in the structure you build.
 
-### Next up: [Evading developer tools detection](../devtools_detectors.md)
+### Next up: [Evading developer tools detection](devtools_detectors)

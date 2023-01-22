@@ -20,5 +20,5 @@ Cloudstream uses JSON files to fetch and parse lists of repositories. You can cr
 - `description`: self explanatory, will be visible in the app
 - `manifestVersion`: currently unused, may be used in the future for backwards compatibility
 - `pluginLists`: List of urls, which contain plugins. All of them will be fetched.
-    - If you followed "[Using plugin template](../using-plugin-template.md)" tutorial, the appropriate `plugins.json` file should be in the builds branch of your new repository.
+    - If you followed "[Using plugin template](using-plugin-template)" tutorial, the appropriate `plugins.json` file should be in the builds branch of your new repository.
     - If not, you can still generate one by running `gradlew makePluginsJson`

@@ -100,4 +100,4 @@ pref("devtools.console.bypass", true);
 pref("devtools.debugger.bypass", true);
 ```
 
-### Next up: [Why your requests fail](../disguising_your_scraper.md)
+### Next up: [Why your requests fail](disguising_your_scraper)

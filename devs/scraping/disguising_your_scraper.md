@@ -191,4 +191,4 @@ Keep in mind that if there is no ribbon/token, there is no way of reasonably acc
 
 In any case, this is how you, as a decent developer, handle the response properly.
 
-### Next up: [Finding video links](../finding_video_links.md)
+### Next up: [Finding video links](finding_video_links)

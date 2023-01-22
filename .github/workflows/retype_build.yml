@@ -29,10 +29,6 @@ jobs:
 
       - uses: retypeapp/action-build@latest
         id: retypebuild
-
-      - uses: retypeapp/action-github-pages@latest
-        with:
-          update-branch: true
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

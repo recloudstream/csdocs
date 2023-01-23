@@ -4,78 +4,13 @@ order: 998
 icon: /static/linux.svg
 ---
 
-# Linux
-You can download this app on Android, Android TV, and FireTV Stick. However, it is unfortunately not avaliable on IOS or on desktop, but you can use tools like [!badge variant="primary" size="l" icon="https://github.com/waydroid.png" text="Waydroid"](https://waydro.id/) or [!badge variant="primary" size="l" icon="https://github.com/anbox.png" text="Anbox"](https://anbox.io/) to emulate android apps on linux.
+# Emulation on Linux
 
-<br />
-<br />
+==- [!badge variant="contrast" size="2xl" icon="/static/waydroid.png" text="**Waydroid**"]
 
-<details>
-    <summary><img src="https://user-images.githubusercontent.com/68516357/213915851-16e76b00-d4b5-4324-8562-027c03979654.png" style="width: 50px;"/><h1> &nbsp; Waydroid<h1></summary>
+!!!success GPU Requirements
 
-## Install WayDroid
-
-### Fedora 36
-
-> **NOTE: Kernels 5.18.18 to 5.19.5 are broken**
-
-1.  Add the Copr repository
-
-```sh
-sudo dnf copr enable aleasto/waydroid
-```
-
-2.  Install waydroid
-
-```sh
-sudo dnf install waydroid
-```
-
-When launching waydroid from the application menu you'll be asked to initialize waydroid with some android images. Use the following links:
-
-System OTA: `https://ota.waydro.id/system`
-
-Vendor OTA: `https://ota.waydro.id/vendor`
-
-> NOTE: THIS WILL DOWNLOAD NON-FREE COMPONENTS (ffmpeg, possibly others)
-
-### Ubuntu 22.04
-
-- Install Pre-requisites
-
-```sh
-sudo apt install curl ca-certificates -y
-```
-
-- The Repo
-
-Add the repo to your sources.list (for droidian & ubports, this step can be skipped)
-Replace DISTRO="jammy" with your current target. Options: focal, jammy, ubuntu-devel, bookworm, bullseye, sid
-
-```sh
-export DISTRO="jammy"
-```
-
-```sh
-sudo curl --proto '=https' --tlsv1.2 -Sf https://repo.waydro.id/waydroid.gpg --output /usr/share/keyrings/waydroid.gpg && \
-echo "deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $DISTRO main" > ~/waydroid.list && \
-sudo mv ~/waydroid.list /etc/apt/sources.list.d/waydroid.list && \
-sudo apt update
-```
-
-- Install Waydroid
-
-```sh
-sudo apt install waydroid -y
-```
-
-Then start Waydroid from the applications menu.
-
-----
-
-### GPU Requirements
-
-Waydroid currently works best with Intel GPUs. They should work out of the box.
+Waydroid currently works best with **Intel GPUs**. They should work out of the box.
 
 AMD GPUs appear to have mixed results (in particular, the _RX 6800_ does not work); if Waydroid does _not_ work you might also want to try the NVIDIA instructions below.
 
@@ -92,9 +27,74 @@ NVIDIA GPUs do _not_ work currently, but there are 2 workarounds:
         ```
         
     -   [Restart](https://wiki.archlinux.org/title/Restart "Restart") the `waydroid-container.service`.
+!!!
+___
+## Fedora 36
+___
 
+!!!danger
+Kernels 5.18.18 to 5.19.5 are broken.
+!!!
 
+[!badge variant="light" text="Step 1"] Add the Copr repository
+
+```sh
+sudo dnf copr enable aleasto/waydroid
+```
+
+[!badge variant="light" text="Step 2"] Install waydroid
+
+```sh
+sudo dnf install waydroid
+```
+
+When launching waydroid from the application menu you'll be asked to initialize waydroid with some android images. Use the following links:
+
+System OTA: `https://ota.waydro.id/system`
+
+Vendor OTA: `https://ota.waydro.id/vendor`
+
+!!!warning
+This will download non-free components (ffmpeg, possibly others).
+!!!
+
+___
+## Ubuntu 22.04
+___
+
+[!badge variant="light" text="Step 1"] Install Pre-requisites
+
+```sh
+sudo apt install curl ca-certificates -y
+```
+
+[!badge variant="light" text="Step 2"] The Repo
+
+Add the repo to your sources.list (for droidian & ubports, this step can be skipped)
+Replace DISTRO="jammy" with your current target. Options: focal, jammy, ubuntu-devel, bookworm, bullseye, sid
+
+```sh
+export DISTRO="jammy"
+```
+
+```sh
+sudo curl --proto '=https' --tlsv1.2 -Sf https://repo.waydro.id/waydroid.gpg --output /usr/share/keyrings/waydroid.gpg && \
+echo "deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $DISTRO main" > ~/waydroid.list && \
+sudo mv ~/waydroid.list /etc/apt/sources.list.d/waydroid.list && \
+sudo apt update
+```
+
+[!badge variant="light" text="Step 3"] Install Waydroid
+
+```sh
+sudo apt install waydroid -y
+```
+
+Then start Waydroid from the applications menu.
+
+___
 ## Install and Run Android Applications
+___
 
 Waydroid is able to perform a few various operations found by using the waydroid app -h command:
 
@@ -128,8 +128,9 @@ The apk files you will sometimes find on the internet tend to only have arm supp
 
 You may want to install [F-Droid](https://f-droid.org/) to get applications graphically. Note that the Google Play Store will not work as is, because it relies on the proprietary Google Play Services, which are not installed.
 
+___
 ## Waydroid Prop Options
-
+___
 Waydroid uses various properties in order to tell the underlying Android system how to behave in a few places. To do this, we use the `waydroid prop` command. To unset a prop, `waydroid prop set <property> ""`
 
 ### Properties
@@ -142,17 +143,23 @@ Waydroid uses various properties in order to tell the underlying Android system 
 - waydroid prop set persist.waydroid.width 0-9999 (int) Used for user to override desired resolution
 - waydroid prop set persist.waydroid.suspend true/false (bool) Keep Waydroid awake and do not let container sleep
 
+___
 ## Setting up a shared folder
+___
 
 Setting up a shared folders to copy files from `source` to `target`.   
 
-> `Source` files will be accessible from `Target` but not Editable.
+!!!dark
+`Source` files will be accessible from `Target` but not Editable.
+!!!
 
 ```sh
 sudo mount --bind <source> <target>
 ```
 
-> We will setup the `host` folder to copy files from the host, and the `droid` folder to copy files from waydroid. 
+!!!dark
+We will setup the `host` folder to copy files from the host, and the `droid` folder to copy files from waydroid.
+!!! 
 
 Example:
 
@@ -178,29 +185,33 @@ mkdir ~/Waydroid/droid
 sudo mount --bind ~/.local/share/waydroid/data/media/0/Waydroid/droid ~/Waydroid/droid
 ```
 
+___
 ## Clipboard
+___
 
-> Replace `dnf` with the appropriate command for your distro.
+!!!dark
+Replace `dnf` with the appropriate command for your distro.
+!!!
 
-- Install pip
+[!badge variant="light" text="Step 1"] Install pip
 
 ```sh
 sudo dnf install pip
 ```
 
-- install wl-clipboard
+[!badge variant="light" text="Step 2"] install wl-clipboard
 
 ```sh
 sudo dnf install wl-clipboard
 ```
 
-- install pyclip
+[!badge variant="light" text="Step 3"] install pyclip
 
 ```sh
 pip install --upgrade pip pyclip
 ```
 
-- add `$HOME/.local/bin/` to your $PATH
+[!badge variant="light" text="Step 4"] add `$HOME/.local/bin/` to your $PATH
 
 add
 
@@ -210,12 +221,10 @@ export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$
 
 to the appropriate file `.zshenv` or `.bashrc` or `.profile`
 
-- reboot the system
-      
-</details>
+[!badge variant="light" text="Step 5"] reboot the system
 
-<br />
- 
-<details>
-    <summary><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Anbox_logo.svg/120px-Anbox_logo.svg.png"  style="width: 45px;"/><h1> &nbsp; Anbox<h1></summary>
-</details>
+===
+
+==- [!badge variant="light" size="2xl" icon="https://github.com/anbox.png" text="**Anbox**"]
+Coming Soon.
+===

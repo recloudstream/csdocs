@@ -1,5 +1,7 @@
 ---
 label: Creating your own JSON repository
+order: 997
+icon: /static/json.png
 ---
 
 # Creating your own JSON repository

@@ -1,7 +1,7 @@
 ---
 label: Using plugin template
-parent: For extension developers
-order: 1
+icon: repo-template
+order: 999
 ---
 
 # Using the template
@@ -15,9 +15,3 @@ The easiest way to start developing is to use our [plugin-template](https://gith
 
 4) You can now create your own plugins and after you push new code, they should automatically be built
 
-### Further reading
-
-After you have set up the repository, you can continue by reading:
-
-- [Creating your own JSON repository](create-your-own-json-repository)
-- [Creating your own providers](create-your-own-providers)

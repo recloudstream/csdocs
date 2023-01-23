@@ -1,5 +1,7 @@
 ---
 label: Creating your own providers
+order: 998
+icon: repo
 ---
 
 # Creating your own Providers

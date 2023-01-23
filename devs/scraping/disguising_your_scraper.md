@@ -1,6 +1,7 @@
 ---
 label: Disguishing your scrapers
-order: 4
+order: 996
+icon: /static/incognito.png
 ---
 
 # Disguishing your scrapers
@@ -190,5 +191,3 @@ print(bypassed_response.hcaptcha_token)
 Keep in mind that if there is no ribbon/token, there is no way of reasonably accessing it.
 
 In any case, this is how you, as a decent developer, handle the response properly.
-
-### Next up: [Finding video links](finding_video_links)

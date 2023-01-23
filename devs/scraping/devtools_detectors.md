@@ -1,6 +1,7 @@
 ---
 label: Devtools detector
-order: 3
+order: 997
+icon: /static/tool.png
 ---
 
 **TL;DR**: You are going to get fucked by sites detecting your devtools, the easiest bypass for this is using [a web sniffer extension](https://chrome.google.com/webstore/detail/web-sniffer/ndfgffclcpdbgghfgkmooklaendohaef?hl=en)
@@ -99,5 +100,3 @@ At line 23
 pref("devtools.console.bypass", true);
 pref("devtools.debugger.bypass", true);
 ```
-
-### Next up: [Why your requests fail](disguising_your_scraper)

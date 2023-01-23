@@ -1,8 +1,8 @@
 ---
 label: Starting
-order: 1
+order: 999
+icon: rocket
 ---
-
 Scraping is just downloading a webpage and getting the wanted information from it. 
 As a start you can scrape the README.md
 
@@ -220,4 +220,3 @@ fun main() {
     println(description)
 }
 ```
-### Next up: [Properly scraping JSON apis](../using_apis.md)

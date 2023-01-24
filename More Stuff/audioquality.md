@@ -15,7 +15,7 @@ DD 5.1 and DD 7.1 are audio formats that refer to the number of channels in the 
 ### DD 5.1
 DD 5.1 stands for Dolby Digital 5.1, which is a surround sound format that uses six channels: five full bandwidth channels (left, center, right, left surround, and right surround) and one low-frequency effects channel (the ".1" in 5.1).
 
-## DD 7.1
+### DD 7.1
 DD 7.1, also known as Dolby Digital Plus 7.1, is an advanced version of DD 5.1, which includes an additional two channels for a total of eight channels (left, center, right, left surround, right surround, left surround back and right surround back, and a low-frequency effects channel). It is commonly used in home theater systems and other high-fidelity audio systems.
 
 ## DDP Audio Codec

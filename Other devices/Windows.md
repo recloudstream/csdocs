@@ -21,7 +21,7 @@ ___
 | - Partition: NTFS <br /> Windows Subsystem For Android™ can only be installed on a NTFS partition, not on an exFAT partition |- Partition: NTFS <br /> Windows Subsystem For Android™ can only be installed on a NTFS partition, not on an exFAT partition|
 | The Computer must support virtualization and be enabled in BIOS/UEFI and Optional Features. [**Guide for this process.**](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1)| The Computer must support virtualization and be enabled in BIOS/UEFI and Optional Features. [**Guide for this process.**](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1)|
 
-!!!warning GPU
+!!!warning GPU compatibility
 Any compatible Intel, AMD or Nvidia GPU. GPU Performance may vary depending on its compatibility with Windows Subsystem For Android™. Nvidia GPUs are known to cause problems. If Windows Subsystem For Android™ does not start or there are graphical glitches when an Nvidia GPU is used, [follow this guide](https://github.com/MustardChef/WSABuilds/blob/master/Guides/ChangingGPU.md) to switch to another iGPU/dGPU/eGPU  that you may have or Microsoft Basic Renderer.
 !!!
 

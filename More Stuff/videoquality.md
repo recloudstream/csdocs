@@ -45,7 +45,7 @@ Blu-ray video quality is a high-definition video standard that offers a higher r
 !!!
 
 ## DS4K
-DS4K stands for "Downscaled 4K." It is a video resolution where a 4K (Ultra High Definition) video is downscaled to a lower resolution, such as 1080p (Full HD) for streaming or distribution purposes. OTT providers often compress their 4K contents poorly to manage their server traffic. That's why encoders downscale the 4K version with good bitrate, sharpness, details, etc. 
+DS4K stands for "Downscaled 4K." It is a video resolution where a 4K (Ultra High Definition) video is downscaled to a lower resolution, such as 1080p (Full HD) for streaming or distribution purposes. OTT providers often compress their 4K contents poorly to manage their server traffic. That's why encoders downscale the 4K version with good bitrate, sharpness, details, etc. The quality of a DS4K video depends on the encoder.
 
 ## SDR vs HDR vs HDR10 vs HDR10+
 

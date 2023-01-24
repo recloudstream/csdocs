@@ -18,7 +18,7 @@ ___
 
 [!badge variant="light" text="Step 4"] Go back to [!badge variant="dark" icon="home" text="Home"] and click the [!badge variant="dark" icon="filter" text="None"] button at the bottom right. Then select the catagory of the extension you have installed and select the extension.
 
-[!embed](https://www.youtube.com/watch?v=B_WmCAUCy2c)
+[!embed](https://www.youtube-nocookie.com/embed/B_WmCAUCy2c)
 ___
 ## Manual Setup
 

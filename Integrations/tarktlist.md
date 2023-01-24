@@ -24,4 +24,4 @@ The Stremio extension is still experimental. Don't expect a stremio like experie
 
 [!badge variant="light" text="Step 7"] At the start of the link, replace `stremio://` with `https://` and remove `manifest.json` from the end of the link
 
-[!embed](https://www.youtube.com/watch?v=DLCSVxSBfxA)
+[!embed](https://www.youtube-nocookie.com/embed/DLCSVxSBfxA)

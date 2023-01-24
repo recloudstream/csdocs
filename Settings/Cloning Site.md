@@ -17,4 +17,4 @@ If the site in the app is blocked for your region, you can make a clone of that 
 [!badge variant="light" text="Step 3"] A two letter [language code](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) (this will dictate how the site is displayed and sorted within the app, just enter en if you are unsure)
 
 
-[!embed](https://www.youtube.com/watch?v=4tR58jyG9uQ)
+[!embed](https://www.youtube-nocookie.com/embed/4tR58jyG9uQ)

@@ -43,7 +43,7 @@ You can follow the [!badge variant="secondary" text="Standard Setup Process"](/i
 
 [!badge variant="light" text="Step 5"] Click Launch
 
-[!embed](https://www.youtube.com/watch?v=BY22OtJYI0c)
+[!embed](https://www.youtube-nocookie.com/embed/BY22OtJYI0c)
 ___
 ### Method 2: Using file sharing app
 

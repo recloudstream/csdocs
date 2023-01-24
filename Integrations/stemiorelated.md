@@ -38,4 +38,4 @@ ___
 
 [!badge variant="light" text="Step 8"] Once Cloudstream has restarted, click **None** (The button to change provider), click **Other** at the bottom, and your addon should appear.
 
-[!embed](https://www.youtube.com/watch?v=iHZENk0MKXs)
+[!embed](https://www.youtube-nocookie.com/embed/iHZENk0MKXs)

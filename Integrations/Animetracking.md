@@ -21,7 +21,7 @@ ___
 If the log in process is successful, you will see a pop text and there will be your profile picture at the top right section of the home and the settings page.
 !!!
 
-[!embed](https://www.youtube.com/watch?v=iEPK08b9OGE)
+[!embed](https://www.youtube-nocookie.com/embed/iEPK08b9OGE)
 ___
 ## Tracking
 

@@ -46,4 +46,4 @@ ___
 
 [!badge variant="dark" icon="gear" text="Settings"] → [!badge variant="dark" text="Player"] → [!badge variant="dark" icon="/static/sub.png" text="Subtitles"] → [!badge variant="dark" text="Auto-Select Language"] → [!badge variant="dark" text="None"]
 
-[!embed](https://www.youtube.com/watch?v=8QLJb_u9_cc)
+[!embed](https://www.youtube-nocookie.com/embed/8QLJb_u9_cc)

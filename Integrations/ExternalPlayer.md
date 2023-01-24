@@ -17,5 +17,5 @@ If the player is not in the pop up list, Click [!badge variant="dark" text="play
 ## Making Ext Player default
 [!badge variant="dark" icon="/static/base.png" text="Cloudstream"] → [!badge variant="dark" icon="/static/gear.png" text="Settings"] → [!badge variant="dark" text="Player"] → [!badge variant="dark" icon="play" text="Preferred video player"] → [!badge variant="dark" text="Choose Your Video player"]
 
-[!embed](https://www.youtube.com/watch?v=cXj9CAEf-Ys)
+[!embed](https://www.youtube-nocookie.com/embed/cXj9CAEf-Ys)
 

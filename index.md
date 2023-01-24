@@ -31,5 +31,5 @@ You can install repositories using short codes too.
 [!embed](https://youtu.be/Wpq9MPajOVc)
 
 !!!contrast If you aren't able to add repositories using these methods
-Use vpn in your device because your ISP is blocking Github raw URLs. You can try [!badge variant="link" text="these VPNs"](/recapps.md/#external-media-player) for the process.
+Use vpn in your device because your ISP is blocking Github raw URLs. You can try [!badge variant="link" text="these VPNs"](/recapps.md/#vpn) for the process.
 !!!

@@ -49,3 +49,7 @@ TrueHD audio is typically found on Blu-ray Discs and streaming services, and it 
 TrueHD is considered as a high-quality audio codec and it is an alternative to DTS-HD Master Audio codec which is also used in Blu-ray Discs and streaming services.
 
 Keep in mind that TrueHD audio requires a compatible player and audio system to decode and play the audio. Some devices and systems may not support TrueHD, so it is important to check the specifications of your equipment before purchasing a movie or TV show with TrueHD audio.
+
+!!!light Summary
+Dolby TrueHD is a lossless multi-channel audio codec that provides high-quality, lossless audio that is virtually identical to the original studio master recording. It is commonly found on Blu-ray Discs and streaming services as an alternative to DTS-HD Master Audio codec. In order to fully experience the Dolby TrueHD audio quality, a compatible player and audio system is required to decode and play the audio.
+!!!

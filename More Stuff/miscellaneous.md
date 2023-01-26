@@ -6,7 +6,9 @@ icon: kebab-horizontal
 ## Terms
 
 **Repository**: Contains all the extensions/sites.
+
 **Extension/Source/Site**: Contains all the videos/servers of a site.
+
 **Server**: Hosts the videos.
 
 

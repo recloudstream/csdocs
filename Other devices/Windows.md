@@ -40,26 +40,6 @@ ___
 
 [!badge variant="light" text="Step 3"] Open the WSA folder and **run** the `Run.bat`
 
-==- :icon-alert: Install.ps1 Error
- If the popup windows disappear without asking administrative permission and Windows Subsystem For Android™ is not installed successfully, you should manually run Install.ps1 as administrator:
-      
-1. Press Win+x and select Windows™ Terminal (Admin)
-      
-2. Input the command below and press enter, replacing {X:\path\to\your\extracted\folder} including the {} with the path of the extracted folder
-    ```Powershell
-        cd "{X:\path\to\your\extracted\folder}"
-     ```  
-        
-3. Input the command below and press enter   
-    ```Powershell
-        PowerShell.exe -ExecutionPolicy Bypass -File .\Install.ps1
-    ```
-        
-4. The script will run and Windows Subsystem For Android™ will be installed
-
-If this workaround does not work, your PC is not supported for WSA
-===
-
 !!!dark
 If you previously have a MagiskOnWSA installation, it will automatically uninstall the previous one while preserving all user data and install the new one, so don't worry about your data.
 !!!
@@ -72,6 +52,10 @@ If this is a first-time install, a window asking for consent to diagnostic infor
 
 !!!light The installation Process is DONE!
 Now close Windows powershell by putting any key there.
+!!!
+
+!!!contrast Troubleshooting
+If you face any issue installing WSA, join the [**Support Server**](https://discord.com/invite/2thee7zzHZ). The common fixes are listed [!badge text="here"](/troubleshooting.md/#wsa). You can follow these too.
 !!!
 
 ___

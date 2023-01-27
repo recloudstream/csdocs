@@ -7,7 +7,7 @@ icon: /static/stremio.png
 # Stremio addon
 
 !!! warning **Read this before installing**
-The Stremio extension is still experimental. Don't expect a stremio like experience. You can add sources in cs3 using this method, but it'll be only for catalogue. So, when you will try to play the eps, it will show **No link found**.
+The Stremio extension is still experimental. Don't expect a stremio like experience. You can add sources in cs3 using this method, but it'll be only for catalogue. So, when you will try to play the eps, it will show **No link found**. **You can't stream torrent files using this.**
 !!!
 
 ## Installing Stremio

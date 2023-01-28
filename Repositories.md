@@ -17,7 +17,7 @@ Direct Install | Short Codes { class="compact" }
 [!badge variant="secondary" icon="static/es.png" text="Storm"](https://l.cloudstream.cf/dir_storm) | `storm`
 [!badge variant="secondary" icon="static/fr.png" text="Eddy"](https://l.cloudstream.cf/dir_eddy) | `eddy`
 [!badge variant="secondary" icon="static/cn.png" text="Horis"](https://l.cloudstream.cf/dir_horis) | `horis`
-[!badge variant="secondary" icon="static/world.png" text="Dontseehere"](https://l.cloudstream.cf/dir_dsh) | `dshrepo`
+[!badge variant="secondary" icon="static/world.png" text="Dontseehere"](https://l.cloudstream.cf/dir_dsh) | `dsh`
 [!badge variant="secondary" icon="static/18p.png" text="NSFW"](https://l.cloudstream.cf/dir_nsfw) | `nsfw`
 
 !!!info

@@ -14,11 +14,12 @@ order: 999
 
 ### Anime
 1. Kickassanime `Hexated`
-2. Zoro `English`
-3. Allanime `English`
-4. Sorastream `Hexated`
-5. Yugenanime `Hexated`
-6. Gogo `English`
+2. KronchEN `Crunchyroll`
+3. Zoro `English`
+4. Allanime `English`
+5. Sorastream `Hexated`
+6. Yugenanime `Hexated`
+7. Gogo `English`
 
 ### Asian Contents
 1. Sorastream `Hexated`

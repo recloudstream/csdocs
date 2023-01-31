@@ -14,7 +14,7 @@ icon: download
 
 [!embed](https://www.youtube-nocookie.com/embed/vMpZEnAZhcY)
 
-## Enternal Downloading
+## External Downloading
 
 You can download from any source without any issue using 1DM. Max the Number of connections to get the best download speed.
 

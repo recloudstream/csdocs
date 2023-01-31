@@ -11,7 +11,7 @@ You can follow the [!badge variant="secondary" text="Standard Setup Process"](/i
 
 ## Installing CS3
 
-### Method 1: Download using code
+==- Method 1: Download using code
 
 !!!warning Before starting the process
 
@@ -44,8 +44,9 @@ You can follow the [!badge variant="secondary" text="Standard Setup Process"](/i
 [!badge variant="light" text="Step 5"] Click Launch
 
 [!embed](https://www.youtube-nocookie.com/embed/BY22OtJYI0c)
-___
-### Method 2: Using file sharing app
+===
+
+==- Method 2: Using file sharing app
 
 !!!warning Before starting the process
 [!badge variant="light" text="Step 1"] Download [Send Files to Tv](https://play.google.com/store/apps/details?id=com.yablio.sendfilestotv) on **both tv and mobile device.**
@@ -56,6 +57,7 @@ ___
 !!!
 
 [!embed](https://youtu.be/lYQ9aBZnWZw)
+===
 ___
 ## Installing repositories
 

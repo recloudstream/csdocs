@@ -6,6 +6,8 @@ icon: /static/win11.png
 
 # WSA Installation Guide
 
+==- MagiskonWSA (Windows 10 & 11)
+
 !!!info This WSA build includes
 - Rooted Android 13
 - Google Play Services and Magisk

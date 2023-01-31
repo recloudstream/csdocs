@@ -6,10 +6,11 @@ icon: /static/win11.png
 
 # WSA Installation Guide
 
+==- MagiskonWSA (Windows 10 & 11)
 !!!info This WSA build includes
 - Rooted Android 13
 - Google Play Services and Magisk
-- No Amazon App store
+- No Amazon app store
 !!!
 
 ## Requirements
@@ -18,12 +19,7 @@ ___
 |:-------------------------:|:-----------------------:|
 | **RAM**: 6 GB (minimum) and 16 GB (recommended).| **RAM**: 6 GB (minimum) and 16 GB (recommended).|
 | **Build**: 22000.526 or higher.| **Build**: 22H2 10.0.19045.2311 or higher.|
-| **Partition**: NTFS <br /> Windows Subsystem For Android™ can only be installed on a NTFS partition, not on an exFAT partition | **Partition**: NTFS <br /> Windows Subsystem For Android™ can only be installed on a NTFS partition, not on an exFAT partition|
 | The Computer must support virtualization and be enabled in BIOS/UEFI and Optional Features. [**Guide for this process.**](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1)| The Computer must support virtualization and be enabled in BIOS/UEFI and Optional Features. [**Guide for this process.**](https://support.microsoft.com/en-us/windows/enable-virtualization-on-windows-11-pcs-c5578302-6e43-4b4b-a449-8ced115f58e1)|
-
-!!!warning GPU compatibility
-Any compatible Intel, AMD or Nvidia GPU. GPU Performance may vary depending on its compatibility with Windows Subsystem For Android™. Nvidia GPUs are known to cause problems. If Windows Subsystem For Android™ does not start or there are graphical glitches when an Nvidia GPU is used, [follow this guide](https://github.com/MustardChef/WSABuilds/blob/master/Guides/ChangingGPU.md) to switch to another iGPU/dGPU/eGPU  that you may have or Microsoft Basic Renderer.
-!!!
 
 ___
 ## Installation
@@ -43,6 +39,7 @@ ___
 !!!dark
 If you previously have a MagiskOnWSA installation, it will automatically uninstall the previous one while preserving all user data and install the new one, so don't worry about your data.
 !!!
+
 
 [!badge variant="light" text="Step 4"] Once the installation process completes, WSA will launch.
 
@@ -101,3 +98,43 @@ ___
 8. Go to the Start Menu
 9. Type `Windows Subsystem for Android`
 10. Once the WSA app shows, click `Uninstall` in the right pane
+===
+
+==- WSA (Windows 11 only)
+
+!!!info This WSA build includes
+- Non-rooted Android 13 (You can't access Android folder)
+- No Google Play Services and Magisk
+- Amazon app store
+!!!
+___
+## Installation
+
+Download and Install Windows Subsystem for Android from the [**Store**](https://apps.microsoft.com/store/detail/windows-subsystem-for-android%E2%84%A2-with-amazon-appstore/9P3395VX91NR?hl=en-us&gl=us).
+
+!!!light Changing region
+If your region doesn't have WSA in the microsoft store, you can change the region to get it.
+1. Select [!badge variant="dark" text="Start"] → [!badge variant="dark" text="Settings"] → [!badge variant="dark" text="Time & Language"] → [!badge variant="dark" text="Language & Region"].
+2. Under [!badge variant="dark" text="Country or region"], select your new region. (Recommendation: US)
+3. You can switch back to your original region at any time.
+!!!
+
+___
+## Sideloading
+
+[!badge variant="light" text="Step 1"] Download and install [**WSA Pacman**](https://github.com/alesimula/wsa_pacman/releases) or [**WSA Sideloader**](https://github.com/infinitepower18/WSA-Sideloader).
+
+[!badge variant="light" text="Step 2"] Go to [!badge variant="dark" text="Windows Subsystem for Android"] → [!badge variant="dark" text="Developer"] and turn on **Developer mode**.
+
+!!!danger You have to give pacman or other sideloaders the adb permission.
+![](https://media.discordapp.net/attachments/1015131233824538624/1062611905249820733/allow.png)
+!!!
+
+!!!info If the "Install" button is greyed out while installing apk
+**Open** WSA pacman and **turn on** wsa from there.
+![](https://media.discordapp.net/attachments/1015131233824538624/1062610433506287708/WSA-pacman_x7UaiviLSW.png)
+!!!
+
+[!embed](https://www.youtube-nocookie.com/embed/m4JA-4tWM_o)
+
+===

@@ -4,22 +4,15 @@ order: 1000
 icon: /static/tv.svg
 ---
 
-
 # Installation on TV
-
-You can follow the [!badge variant="secondary" text="Standard Setup Process"](/index.md/#standard-setup) here too. But if your TV browser isn't working, follow these methods to install cloudstream.
 
 ## Installing CS3
 
-==- Method 1: Using TV browser
+!!!light
+You can follow the [!badge variant="secondary" text="Standard Setup Process"](/index.md/#standard-setup) here too. But if your TV browser isn't working, follow these methods to install cloudstream.
+!!!
 
-[!badge variant="light" text="Step 1"] Open your TV browser and go to the [!badge text="Official Site"](https://www.cloudstream.cf/)
-
-[!badge variant="light" text="Step 2"] Download and install [!badge variant="primary" icon="/static/stable.png" text="Stable"] or [!badge variant="danger" icon="/static/pre.png" text="Pre-release"]
-
-===
-
-==- Method 2: Download using code
+==- Method 1: Download using code
 
 !!!warning Before starting the process
 
@@ -54,7 +47,7 @@ You can follow the [!badge variant="secondary" text="Standard Setup Process"](/i
 [!embed](https://www.youtube-nocookie.com/embed/BY22OtJYI0c)
 ===
 
-==- Method 3: Using file sharing app
+==- Method 2: Using file sharing app
 
 !!!warning Before starting the process
 [!badge variant="light" text="Step 1"] Download [Send Files to Tv](https://play.google.com/store/apps/details?id=com.yablio.sendfilestotv) on **both tv and mobile device.**

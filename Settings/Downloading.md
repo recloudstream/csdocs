@@ -6,7 +6,7 @@ icon: download
 
 # Downloading From Cloudstream
 
-==- Change the download location.
+==- Change the download location
 
 [!badge variant="dark" icon="/static/base.png" text="Cloudstream"] → [!badge variant="dark" icon="/static/gear.png" text="Settings"] → [!badge variant="dark" icon="download" text="download path"] and then select a custom location.
 

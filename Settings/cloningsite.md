@@ -6,7 +6,7 @@ icon: plus
 
 # Site Cloning
 
-If the site in the app is blocked for your region, you can make a clone of that by using the info of a site that is working for you. The site has to be the mirror of the site that is already in the app. You can't clone a site of different structure.
+If the site in the app is blocked for your region, you can make a clone of that site using a site of **same structure** which is working for you. You can't clone a site of different structure.
 
 ## Process
 

@@ -12,7 +12,7 @@ icon: /static/tv.svg
 You can follow the [!badge variant="secondary" text="Standard Setup Process"](/index.md/#standard-setup) here too. But if your TV browser isn't working, follow these methods to install cloudstream.
 !!!
 
-==- Method 1: Using link sharing code
+==- Method 1: Using URL Shortener code
 
 !!!warning Before starting the process
 

@@ -12,6 +12,9 @@ icon: thumbsup
 
 [!badge variant="secondary" size="2xl" icon="/static/1dm.png" text="**1DM**"](https://play.google.com/store/apps/details?id=idm.internet.download.manager&hl=en&gl=US)  [!badge variant="secondary" size="2xl" icon="/static/fdm.png" text="**FDM**"](https://play.google.com/store/apps/details?id=org.freedownloadmanager.fdm&hl=en&gl=US)    [!badge variant="secondary" size="2xl" icon="/static/navi.png" text="**Navi**"](https://play.google.com/store/apps/details?id=com.tachibana.downloader&hl=en&gl=US)
 
+## TV Web Browser
+[!badge variant="secondary" size="2xl" icon="https://play-lh.googleusercontent.com/662xkJIL0R76OO_cB1KnHhQ3YRjZyNKwrlG6rDgGHgPqLZNOI617W8Gr-TqDTaD69KI" text="**TV Bro**"](https://play.google.com/store/apps/details?id=com.phlox.tvwebbrowser&hl=en&gl=US)
+
 ## TV File Manager
 [!badge variant="secondary" size="2xl" icon="https://play-lh.googleusercontent.com/V3lCSVX5S-5QPt3MBF6jJM5xggsEZF5FhES5-5Y47Jr3FpQfG3wDIQs0wVmQUtxatK0" text="**AN Explorer**"](https://play.google.com/store/apps/details?id=dev.dworks.apps.anexplorer)   [!badge variant="secondary" size="2xl" icon="https://play-lh.googleusercontent.com/DhBFSJoink5IMx0GdrmYuF-HzAqfSt_0wTkW0UtnAmp76tAEF98C3K5a-hP_KzgB0xY" text="**FX Explorer**"](https://play.google.com/store/apps/details?id=nextapp.fx&hl=en&gl=US)
 

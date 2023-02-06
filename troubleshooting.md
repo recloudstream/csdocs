@@ -37,6 +37,10 @@ Clear the app cache and restart the app. You can also set a lower amount cache t
 ## Subtitles
 ==- Broken Subtitles
 [!badge variant="dark" text="Video player"] → [!badge variant="dark" text="sources"] → [!badge variant="dark" text="subtitles"] and click the [!badge variant="dark" text="Auto"] at the top. Now change the encode of the subtitle language.
+
+![](https://media.discordapp.net/attachments/1015131233824538624/1072223726130692216/VIu1MFB.png)
+
+![](https://media.discordapp.net/attachments/1015131233824538624/1072224426084532225/iKMhqlW.png)
 ===
 
 ==- Subtitles casting issue

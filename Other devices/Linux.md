@@ -6,7 +6,7 @@ icon: /static/linux.svg
 
 # Emulation on Linux
 
-==- [!badge variant="contrast" size="2xl" icon="/static/waydroid.png" text="**Waydroid**"]
+##Waydroid
 
 !!!success GPU Requirements
 
@@ -223,8 +223,3 @@ to the appropriate file `.zshenv` or `.bashrc` or `.profile`
 
 [!badge variant="light" text="Step 5"] reboot the system
 
-===
-
-==- [!badge variant="light" size="2xl" icon="https://github.com/anbox.png" text="**Anbox**"]
-Coming Soon.
-===

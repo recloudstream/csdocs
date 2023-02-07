@@ -6,7 +6,7 @@ icon: /static/linux.svg
 
 # Emulation on Linux
 
-##Waydroid
+## Waydroid
 
 !!!success GPU Requirements
 

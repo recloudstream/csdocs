@@ -20,7 +20,7 @@ icon: thumbsup
 
 ## VPN
 
-[!badge variant="secondary" size="2xl" icon="/static/wind.png" text="**Windscribe**"](https://play.google.com/store/apps/details?id=com.windscribe.vpn&hl=en&gl=US)  [!badge variant="secondary" size="2xl" icon="/static/proton.png" text="**Proton**"](https://play.google.com/store/apps/details?id=ch.protonvpn.android&hl=en&gl=US)    [!badge variant="secondary" size="2xl" icon="/static/warp.png" text="**1.1.1.1**"](https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone)
+[!badge variant="secondary" size="2xl" icon="/static/wind.png" text="**Windscribe**"](https://play.google.com/store/apps/details?id=com.windscribe.vpn&hl=en&gl=US)  [!badge variant="secondary" size="2xl" icon="/static/proton.png" text="**Proton**"](https://play.google.com/store/apps/details?id=ch.protonvpn.android&hl=en&gl=US)  [!badge variant="secondary" size="2xl" icon="https://raw.githubusercontent.com/nomoresat/DPITunnel-android/main/assets/logo.webp" text="**DPI Tunnel**"](https://github.com/nomoresat/DPITunnel-android)    [!badge variant="secondary" size="2xl" icon="/static/warp.png" text="**1.1.1.1**"](https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone)
 
 ## External Caster
 

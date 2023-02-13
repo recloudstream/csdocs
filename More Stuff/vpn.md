@@ -30,7 +30,7 @@ Windscribe has more free servers than Proton vpn. As a result, you will get less
 !!!
 
 !!!Success Generate free WARP+ data
-1. Doenload [!badge variant="secondary" icon="/static/warp.png" text="1.1.1.1"](https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone)
+1. Download [!badge variant="secondary" icon="/static/warp.png" text="1.1.1.1"](https://play.google.com/store/apps/details?id=com.cloudflare.onedotonedotonedotone)
 2. Go to [!badge variant="dark" text="1.1.1.1"] → [!badge variant="dark" text="Settings"] → [!badge variant="dark" text="Advanced"] → [!badge variant="dark" text="Diagnostics"]  and copy the [!badge variant="dark" text="ID"]
 3. 
 	1. [!badge variant="dark" text="Run"] [!badge variant="secondary" text="Replit"](https://replit.com/@aliilapro/warp) and paste your [!badge variant="dark" text="ID"] there.

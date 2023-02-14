@@ -6,7 +6,7 @@ icon: /static/win11.png
 
 # WSA Installation Guide
 
-==- MagiskonWSA (Windows 10 & 11)
+==- MagiskonWSA (Windows 10 & 11) (Includes Google Play Store + Google Play Services and Magisk)
 
 !!!info This WSA build includes
 - Rooted Android 13
@@ -105,7 +105,7 @@ ___
 10. Once the WSA app shows, click `Uninstall` in the right pane
 ===
 
-==- WSA (Windows 11 only)
+==- WSA (Windows 11 only) (Amazon Appstore)
 
 !!!info This WSA build includes
 - Non-rooted Android 13 (You can't access Android folder)

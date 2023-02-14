@@ -6,7 +6,7 @@ icon: /static/win11.png
 
 # WSA Installation Guide
 
-==- MagiskonWSA (Windows 10 & 11) (Includes Google Play Store + Google Play Services and Magisk)
+==- MagiskonWSA (Windows 10 & 11) [Includes Google Play Store + Google Play Services and Magisk]
 
 !!!info This WSA build includes
 - Rooted Android 13
@@ -93,19 +93,15 @@ Paste the VHDX file back to the folder `%LOCALAPPDATA%\Packages\MicrosoftCorpora
 ___
 ## Uninstallation
 
-1. Go to the Start Menu
-2. Type `Windows Subsystem for Android`
-3. Once the WSA app shows, click `App settings` in the right panel.
-4. In the Settings window that opens, scroll down and click `Terminate`
-5. Click `Repair`
-6. Click `Reset`
-7. Close the Settings app
-8. Go to the Start Menu
-9. Type `Windows Subsystem for Android`
-10. Once the WSA app shows, click `Uninstall` in the right pane
+1. Make sure that Windows Subsystem For Android™ is not running
+2. Search for ``Windows Subsystem For Android™ Settings`` using the built-in Windows Search, or through Add and Remove Programs and press uninstall
+3. Delete the WSA folder that extracted you extracted and Run.bat was run from to install WSA (MagiskOnWSA folder)
+4. Go to ``%LOCALAPPDATA%/Packages/`` and delete the folder named ``MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe``
+  - If you get an error that states that the file(s) could not be deleted, make sure that WSA is turned off
+
 ===
 
-==- WSA (Windows 11 only) (Amazon Appstore)
+==- WSA (Windows 11 only) [Amazon Appstore]
 
 !!!info This WSA build includes
 - Non-rooted Android 13 (You can't access Android folder)

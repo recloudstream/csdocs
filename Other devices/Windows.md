@@ -79,7 +79,16 @@ ___
 ___
 ## Update
 
-**Merge** the new and the old wsa folder and **replace** the old files with the new ones.
+1. [Download the latest build](https://github.com/MustardChef/WSABuilds#downloads) (that you want to update to)
+2. Make sure Windows Subsystem For Android is not running (Click on "Turn off" in the WSA Settings and wait for the spinning loader to disappear)
+2. Using 7-Zip, WinRAR or any other tool of choice, open the .zip file 
+3. Within the .zip archive open the subfolder (Example: WSA_2xxx.xxxxx.xx.x_xx_Release-Nightly-with-magisk-xxxxxxx-MindTheGapps-xx.x-RemovedAmazon)
+4. Select all the files that are within this subfolder and extract them to the current folder where the file for Windows Subsystem For Android are (the folder you extracted, and installed WSA from)
+5. When prompted to replace folders, select "Do this for all current items" and click on "Yes" 
+6. When prompted to replace files, click on "Replace the files in the destination"
+7. Run  the ``Run.bat`` file
+8. Launch Windows Subsystem For Android Settings app and go to the ``About`` tab using the sidebar
+9. Check if the WSA version matches the latest version/ the version number that you want to update to
 
 ___
 ## Backup & Restore
@@ -93,16 +102,12 @@ Paste the VHDX file back to the folder `%LOCALAPPDATA%\Packages\MicrosoftCorpora
 ___
 ## Uninstallation
 
-1. Go to the Start Menu
-2. Type `Windows Subsystem for Android`
-3. Once the WSA app shows, click `App settings` in the right panel.
-4. In the Settings window that opens, scroll down and click `Terminate`
-5. Click `Repair`
-6. Click `Reset`
-7. Close the Settings app
-8. Go to the Start Menu
-9. Type `Windows Subsystem for Android`
-10. Once the WSA app shows, click `Uninstall` in the right pane
+1. Make sure that Windows Subsystem For Android™ is not running
+2. Search for ``Windows Subsystem For Android™ Settings`` using the built-in Windows Search, or through Add and Remove Programs and press uninstall
+3. Delete the WSA folder that extracted you extracted and Run.bat was run from to install WSA (MagiskOnWSA folder)
+4. Go to ``%LOCALAPPDATA%/Packages/`` and delete the folder named ``MicrosoftCorporationII.WindowsSubsystemForAndroid_8wekyb3d8bbwe``
+  - If you get an error that states that the file(s) could not be deleted, make sure that WSA is turned off
+
 ===
 
 ==- WSA (Windows 11 only)
@@ -110,7 +115,7 @@ ___
 !!!info This WSA build includes
 - Non-rooted Android 13 (You can't access Android folder)
 - No Google Play Services and Magisk
-- Amazon app store
+- Amazon Appstore
 !!!
 ___
 ## Installation

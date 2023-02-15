@@ -6,7 +6,7 @@ icon: /static/win11.png
 
 # WSA Installation Guide
 
-==- MagiskonWSA (Windows 10 & 11) [Includes Google Play Store + Google Play Services and Magisk]
+==- MagiskonWSA (Windows 10 & 11)
 
 !!!info This WSA build includes
 - Rooted Android 13
@@ -79,7 +79,16 @@ ___
 ___
 ## Update
 
-**Merge** the new and the old wsa folder and **replace** the old files with the new ones.
+1. [Download the latest build](https://github.com/MustardChef/WSABuilds#downloads) (that you want to update to)
+2. Make sure Windows Subsystem For Android is not running (Click on "Turn off" in the WSA Settings and wait for the spinning loader to disappear)
+2. Using 7-Zip, WinRAR or any other tool of choice, open the .zip file 
+3. Within the .zip archive open the subfolder (Example: WSA_2xxx.xxxxx.xx.x_xx_Release-Nightly-with-magisk-xxxxxxx-MindTheGapps-xx.x-RemovedAmazon)
+4. Select all the files that are within this subfolder and extract them to the current folder where the file for Windows Subsystem For Android are (the folder you extracted, and installed WSA from)
+5. When prompted to replace folders, select "Do this for all current items" and click on "Yes" 
+6. When prompted to replace files, click on "Replace the files in the destination"
+7. Run  the ``Run.bat`` file
+8. Launch Windows Subsystem For Android Settings app and go to the ``About`` tab using the sidebar
+9. Check if the WSA version matches the latest version/ the version number that you want to update to
 
 ___
 ## Backup & Restore
@@ -101,12 +110,12 @@ ___
 
 ===
 
-==- WSA (Windows 11 only) [Amazon Appstore]
+==- WSA (Windows 11 only)
 
 !!!info This WSA build includes
 - Non-rooted Android 13 (You can't access Android folder)
 - No Google Play Services and Magisk
-- Amazon app store
+- Amazon Appstore
 !!!
 ___
 ## Installation

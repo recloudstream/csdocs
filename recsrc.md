@@ -1,4 +1,4 @@
----
+9---
 label: Recommended Sources
 icon: star
 order: 999
@@ -16,10 +16,11 @@ order: 999
 1. Kickassanime `Hexated`
 2. KronchEN `Crunchyroll`
 3. Zoro `English`
-4. Allanime `English`
-5. Sorastream `Hexated`
-6. Yugenanime `Hexated`
-7. Gogo `English`
+4. 9anime `Storm`
+5. Allanime `English`
+6. Sorastream `Hexated`
+7. Yugenanime `Hexated`
+8. Gogo `English`
 
 ### Asian Contents
 1. Sorastream `Hexated`

@@ -18,7 +18,7 @@ Video links are often the most protected part of the website and if you cannot s
 
 ## 0. Scraping
 
-If you are unfamiliar with the concept of scraping, you should probably start by reading [this guide](scraping) which should hopefuly familiarize you with this technique.
+If you are unfamiliar with the concept of scraping, you should probably start by reading [this guide](scraping/gettingstarted/) which should hopefuly familiarize you with this technique.
 
 ## 1. Searching
 

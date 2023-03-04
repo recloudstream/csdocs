@@ -6,7 +6,7 @@ icon: kebab-horizontal
 
 ## Sub/Dub Filter for Anime
 
-[!embed](https://www.youtube-nocookie.com/embed/6CoQ6wwZVhw)
+[!badge variant="dark" icon="/static/base.png" text="Cloudstream"] → [!badge variant="dark" icon="/static/gear.png" text="Settings"] → [!badge variant="dark"  text="Providers"] → [!badge variant="dark"  text="Display Dubbed/Subbed Anime"] and apply your wanted filter.
 
 ## NSFW
 

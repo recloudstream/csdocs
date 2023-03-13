@@ -29,6 +29,7 @@ order: 999
 3. Kissasian `Hexated`
 4. Dramacool `Horis`
 5. Sflix bundle `English`
+6. ShowFlix `Indian languages`
 
 ### Livestreams
 1. IPTV-org (TV) `Multilingual`

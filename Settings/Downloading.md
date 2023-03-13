@@ -8,7 +8,7 @@ icon: download
 
 ==- Change the download location
 
-[!badge variant="dark" icon="/static/base.png" text="Cloudstream"] → [!badge variant="dark" icon="/static/gear.png" text="Settings"] → [!badge variant="dark" icon="download" text="download path"] and then select a custom location.
+[!badge variant="dark" icon="/static/base.png" text="Cloudstream"] → [!badge variant="dark" icon="/static/gear.png" text="Settings"] → [!badge variant="dark"  text="General"] → [!badge variant="dark" icon="download" text="download path"] and then select a custom location.
 
 ===
 ==- Change video quality or source

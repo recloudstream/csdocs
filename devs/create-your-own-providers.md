@@ -20,7 +20,7 @@ Video links are often the most protected part of the website and if you cannot s
 
 If you are unfamiliar with the concept of scraping, you should probably start by reading [this guide](scraping) which should hopefuly familiarize you with this technique.
 
-Looing at how some extensions work alongside reading this will likely help a lot. See what common patterns you can spot in multiple extensions. 
+Looking at how some extensions work alongside reading this will likely help a lot. See what common patterns you can spot in multiple extensions. 
 
 ## 1. Searching
 
@@ -319,5 +319,32 @@ A function can look something like this:
                 }
             }
 ```
+
+## 4. Loading links
+
+This is usually the hardest part when it comes to scraping video sites, because it costs a lot to host videos.
+As bandwidth is expensive video hosts need to recuperate their expenses using ads, but when scraping we bypass all ads.
+This means that video hosts have a big monetary incentive to make it as hard as possible to get the video links.
+
+This means that you cannot write just one piece of skeleton code to scrape all video hosts, they are all unique. 
+You will need to customized scrapers for each video host. There are some common obfuscation techniques you should know about and how to detect them.
+
+### Obfuscation techniques to know about:
+
+**Base64**:
+This is one of the most common obfuscation techniques, and you need to be able to spot it inside documents. It is used to hide important text in plain view.
+It looks something like this: `VGhpcyBpcyBiYXNlNjQgZW5jb2RlIHRleHQuIA==`
+A dead giveaway that it is base64 or something similar is that the string ends with `==`, something to watch out for, but not required. If you see any suspicious string using A-z in both uppercase and lowercase combined with some numbers then immediately check if it is base64.
+
+**AES encryption:**
+This is the more annoying variant of Base64 for our purposes, but less common. Some responses may be encrypted using AES and it is not too hard to spot.
+Usually encrypted content is encoded in Base64 (which decodes to garbage), which makes it easier to spot. Usually sites are not too covert in the use of AES, and you should be alerted if any site contains references to `enc`, `iv` or `CryptoJS`. The name of the game here is to find the decryption key, which is easiest done with a debugger. If you can find where the decryption takes place in the code, usually with some library like `CryptoJS` then you can place a breakpoint there to find the key.
+
+
+More to come later!
+
+
+
+
 
 # TODO: REST

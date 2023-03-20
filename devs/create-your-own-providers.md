@@ -8,10 +8,10 @@ icon: repo
 
 Providers in CloudStream consists primarily of 4 different parts:
 
-- [Searching](https://recloudstream.github.io/dokka/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#498495168%2FFunctions%2F492899073)
-- [Loading the home page](https://recloudstream.github.io/dokka/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#1356482668%2FFunctions%2F492899073)
-- [Loading the show page](https://recloudstream.github.io/dokka/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#1671784382%2FFunctions%2F492899073)
-- [Loading the video links](https://recloudstream.github.io/dokka/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#-930139416%2FFunctions%2F492899073)
+- [Searching](https://recloudstream.github.io/dokka/-cloudstream/com.lagradost.cloudstream3/-main-a-p-i/index.html#498495168%2FFunctions%2F101969414)
+- [Loading the home page](https://recloudstream.github.io/dokka/-cloudstream/com.lagradost.cloudstream3/-main-a-p-i/index.html#1356482668%2FFunctions%2F101969414)
+- [Loading the show page](https://recloudstream.github.io/dokka/-cloudstream/com.lagradost.cloudstream3/-main-a-p-i/index.html#1671784382%2FFunctions%2F101969414)
+- [Loading the video links](https://recloudstream.github.io/dokka/-cloudstream/com.lagradost.cloudstream3/-main-a-p-i/index.html#-930139416%2FFunctions%2F101969414)
 
 When making a provider it is important that you are confident you can scrape the video links first!
 Video links are often the most protected part of the website and if you cannot scrape them then the provider is useless.
@@ -19,6 +19,8 @@ Video links are often the most protected part of the website and if you cannot s
 ## 0. Scraping
 
 If you are unfamiliar with the concept of scraping, you should probably start by reading [this guide](scraping) which should hopefuly familiarize you with this technique.
+
+Looing at how some extensions work alongside reading this will likely help a lot. See what common patterns you can spot in multiple extensions. 
 
 ## 1. Searching
 
@@ -141,19 +143,21 @@ TLDR: Exactly like searching but you defined your own queries.
 
 ## 3. Loading the show page
 
-// Currently Work in progress 
+The show page is a bit more complex than search results, but it uses the same logic used to get search results: using CSS selectors and regex to parse html into a kotlin object. With the amount of info being parsed this function can get quite big, but the fundamentals are still pretty simple.
+The only difficultuy is getting the episodes, they are not always not part of the html. Check if any extra requests are sent in your browser when visiting the episodes page.
 
-The home page is a bit more complex than search results, but it uses the same logic used to get search results: using CSS selectors and regex to parse html into kotlin object. With the amount of info being parsed this function can get quite big, but the fundamentals are still pretty simple.
+**NOTE**: Episodes in CloudStream are not paginated, meaning that if you have a show with 21 seasons, all on different website pages you will need to parse them all. 
 
 A function can look something like this:
 
 
 ```kotlin
-
     // The url argument is the same as what you put in the Search Response from search() and getMainPage() 
     override suspend fun load(url: String): LoadResponse {
         val document = app.get(url).document
 
+        // A lot of metadata is nessecary for a pretty page
+        // Usually this is simply doing a lot of selects
         val details = document.select("div.detail_page-watch")
         val img = details.select("img.film-poster-img")
         val posterUrl = img.attr("src")
@@ -165,16 +169,26 @@ A function can look something like this:
         var tags: List<String>? = null
         var cast: List<String>? = null
         val youtubeTrailer = document.selectFirst("iframe#iframe-trailer")?.attr("data-src")
+        
+        // The rating system goes is in the range 0 - 10 000
+        // which allows the greatest flexibility app wise, but you will often need to
+        // multiply your values
         val rating = document.selectFirst(".fs-item > .imdb")?.text()?.trim()
             ?.removePrefix("IMDB:")?.toRatingInt()
 
-        // I would not really recommend 
+        // Sometimes is is not quite possible to selct specific information
+        // as it is presented as text with to specific selectors to differentiate it.
+        // In this case you can iterate over the rows til you find what you want.
+        // It is a bit dirty but it works.
         document.select("div.elements > .row > div > .row-line").forEach { element ->
             val type = element?.select(".type")?.text() ?: return@forEach
             when {
                 type.contains("Released") -> {
                     year = Regex("\\d+").find(
                         element.ownText() ?: return@forEach
+                        // Remember to always use OrNull functions
+                        // otherwise stuff will throw exceptions on unexpected values.
+                        // We would not want a page to fail because the rating was incorrectly formatted
                     )?.groupValues?.firstOrNull()?.toIntOrNull()
                 }
                 type.contains("Genre") -> {
@@ -190,8 +204,11 @@ A function can look something like this:
         }
         val plot = details.select("div.description").text().replace("Overview:", "").trim()
 
+        // This is required to know which sort of LoadResponse to return.
+        // If the page is a movie it needs different metadata and will be displayed differently
         val isMovie = url.contains("/movie/")
 
+        // This is just for fetching the episodes later
         // https://sflix.to/movie/free-never-say-never-again-hd-18317 -> 18317
         val idRegex = Regex(""".*-(\d+)""")
         val dataId = details.attr("data-id")
@@ -220,6 +237,9 @@ A function can look something like this:
         if (isMovie) {
             // Movies
             val episodesUrl = "$mainUrl/ajax/movie/episodes/$id"
+            // Episodes are often retrieved using a separate request.
+            // This is usually the most tricky part, but not that hard.
+            // The episodes are seldom protected by any encryption or similar.
             val episodes = app.get(episodesUrl).text
 
             // Supported streams, they're identical
@@ -271,6 +291,7 @@ A function can look something like this:
                     seasonEpisodesItems =
                         seasonEpisodes.select("ul > li > a")
                 }
+
                 seasonEpisodesItems.forEach {
                     val episodeImg = it?.select("img")
                     val episodeTitle = episodeImg?.attr("title") ?: it.ownText()
@@ -286,6 +307,7 @@ A function can look something like this:
                                 ?.toIntOrNull()
                         } ?: episode
 
+                    // Episodes themselves can contain quite a bit of metadata, but only data to load links is required.
                     episodes.add(
                         newEpisode(Pair(url, episodeData)) {
                             this.posterUrl = fixUrlNull(episodePosterUrl)

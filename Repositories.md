@@ -16,7 +16,7 @@ Direct Install | Short Codes { class="compact" }
 [!badge variant="secondary" icon="static/in.png" text="Likdev"](https://cutt.ly/X5owMnl) | `Z7IWUXT`
 [!badge variant="secondary" icon="static/es.png" text="Storm"](https://cutt.ly/l5oet11) | `l7IWex2`
 [!badge variant="secondary" icon="static/cr.png" text="Crunchyroll"](https://cutt.ly/05oqpYY) | `Kronch`
-[!badge variant="secondary" icon="static/fr.png" text="Eddy"](https://cutt.ly/75oeVTv) | `w7IWtCZ`
+[!badge variant="secondary" icon="static/fr.png" text="French"](https://cutt.ly/E6xZDCz) | `Z6xZSoQ`
 [!badge variant="secondary" icon="static/cn.png" text="Horis"](https://cutt.ly/o5oeJBf) | `l7IQ7DJ`
 [!badge variant="secondary" icon="static/world.png" text="Dontseehere"](https://cutt.ly/t5owtKm) | `M7IWqme`
 [!badge variant="secondary" icon="static/18p.png" text="NSFW"](https://cutt.ly/A5oqPYz) | `nsfwrepo`

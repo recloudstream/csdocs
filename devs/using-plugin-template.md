@@ -5,11 +5,13 @@ order: 999
 ---
 
 # Using the template
-The easiest way to start developing is to use our [plugin-template](https://github.com/recloudstream/plugin-template) as it sets up the build environment automatically.
+The easiest way to start developing is to use our [plugin-template](https://codeberg.org/cloudstream/plugin-template) as it sets up the build environment automatically.
 
-1) <a href="https://github.com/recloudstream/plugin-template/generate" target="_blank">Use our plugin template</a>
+To get started:
 
-2) Select `Include all branches`
+1) <a href="https://codeberg.org/cloudstream/plugin-template" target="_blank">Copy the plugin template page URL</a>
+
+2) Import into GitHub using the <a href="https://github.com/new/import" target="_blank">"Import a Repository"</a> Feature
 
 3) Check if GitHub actions are enabled, by going to: `Settings > Actions > General > Allow all actions and reusable workflows`
 

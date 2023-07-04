@@ -13,15 +13,16 @@ order: 999
 4. AllMoviesForYou `English`
 
 ### Anime
-1. Kickassanime `Hexated`
-2. KronchEN `Crunchyroll`
-3. Zoro `English`
-4. 9anime `Storm`
-5. Allanime `English`
-6. Sorastream `Hexated`
-7. Yugenanime `Hexated`
-8. Animension `Storm`
-9. Gogo `English`
+1. Anichi `Hexated`
+2. 9anime `Storm`
+3. KronchEN `Crunchyroll`
+4. Zoro `English`
+5. Kickassanime `Hexated`
+6. Allanime `English`
+7. Sorastream `Hexated`
+8. Yugenanime `Hexated`
+9. Animension `Storm`
+10. Gogo `English`
 
 ### Asian Contents
 1. Sorastream `Hexated`

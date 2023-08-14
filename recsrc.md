@@ -14,9 +14,9 @@ order: 999
 
 ### Anime
 1. Anichi `Hexated`
-2. 9anime `Storm`
-3. KronchEN `Crunchyroll`
-4. Zoro `English`
+2. 9anime `Avocado`
+3. KronchEN `Avocado`
+4. Aniwatch `English`
 5. Kickassanime `Hexated`
 6. Allanime `English`
 7. Sorastream `Hexated`

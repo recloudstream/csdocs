@@ -15,7 +15,7 @@ order: 999
 ### Anime
 1. Anichi `Hexated`
 2. 9anime `Avocado`
-3. KronchEN `Avocado`
+3. KronchEN/Kwunchwoll `Avocado`
 4. Aniwatch `English`
 5. Kickassanime `Hexated`
 6. Allanime `English`

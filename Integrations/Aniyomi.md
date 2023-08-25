@@ -11,7 +11,7 @@ Add this repository using this shortcode: [anicompat](https://raw.githubusercont
 
 ~~Click~~ Pet the gorilla to install it on your phone:
 
-<a href="cloudstreamrepo://raw.githubusercontent.com/CranberrySoup/AniyomiCompatExtension/master/repo.json"><img alt="gorilla" width="100px" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/72x72/1f98d.png"/></a>
+[![gorilla](https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/72x72/1f98d.png)](cloudstreamrepo://raw.githubusercontent.com/CranberrySoup/AniyomiCompatExtension/master/repo.json)
 
 ### Installation
 

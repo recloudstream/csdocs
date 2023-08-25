@@ -19,6 +19,10 @@ Install the extension in CloudStream. The extension should then download the int
 
 Installing this plugin does __not__ automatically download all Aniyomi extensions, you still need to get those from Aniyomi.
 
+### Aniyomi extension list
+
+You can find the list of all Aniyomi extensions [here](https://aniyomi.org/extensions/).
+
 ---
 
 ### Troubleshooting

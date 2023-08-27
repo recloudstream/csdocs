@@ -7,7 +7,7 @@ icon: tools
 ## Basic
 
 ==- Repositories/Extensions are not loading.
-If the repositories are not loading in [the official site](https://cloudstream.cf/repos/) or in the [!badge variant="dark" text="Extensions"] section, repeat the process using VPN connection.
+If the repositories are not loading in [the official site](https://recloudstream.github.io/public-gateway-checker/) or in the [!badge variant="dark" text="Extensions"] section, repeat the process using VPN connection.
 ===
 
 ==- `XYZ` extension is not loading.

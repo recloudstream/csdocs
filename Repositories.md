@@ -11,6 +11,7 @@ Direct Install | Short Codes { class="compact" }
 [!badge variant="secondary" icon="static/gb.png" text="English"](https://cutt.ly/6wyw1RnS) | `6wyw1RnS`
 [!badge variant="secondary" icon="static/world.png" text="Multilingual"](https://cutt.ly/Bwyw1S3k) | `Bwyw1S3k`
 [!badge variant="secondary" icon="static/jo.png" text="Arabic"](https://cutt.ly/Jwyw1ZiR) | `Jwyw1ZiR`
+[!badge variant="secondary" icon="static/jo.png" text="Arabico"](https://pastebin.com/raw/KkD9AdgY) | `0wF96Vs1`
 [!badge variant="secondary" icon="static/world.png" text="Hexated"](https://cutt.ly/mwyw140i) | `mwyw140i`
 [!badge variant="secondary" icon="static/in.png" text="Likdev"](https://cutt.ly/bwyw0Mcv) | `bwyw0Mcv`
 [!badge variant="secondary" icon="static/es.png" text="Storm"](https://cutt.ly/Swyw03Nc) | `Swyw03Nc`
@@ -23,5 +24,5 @@ Direct Install | Short Codes { class="compact" }
 [!badge variant="secondary" icon="static/world.png" text="Avocado"](https://cutt.ly/aguaco) | `aguaco`
 
 !!!info
-if you don't understand the name of a repository, the repository was named after the developer of that repository.
+If you don't understand the name of a repository, the repository may have been named after the developer of that repository.
 !!!!

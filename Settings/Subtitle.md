@@ -4,7 +4,7 @@ order: 1000
 icon: /static/sub.png
 ---
 
-# Subtitle Related FAQ
+# FAQ on Subtitles
 
 ==- Subtitle appearance settings
 
@@ -22,23 +22,23 @@ icon: /static/sub.png
 ===
 ==- Select subtitle source
 
-[!badge variant="dark" text="Video player"] → [!badge variant="dark" text="sources"] → [!badge variant="dark" text="subtitles"] → 3 types of subtitle source: 
+[!badge variant="dark" text="Video player"] → [!badge variant="dark" text="sources"] → [!badge variant="dark" text="subtitles"] → subtitles can come from three sources: 
 
-1. from the provider
-2. from the device 
-3. from the internet which are [Open subtitles](https://www.opensubtitles.com/), [Addic7ed](https://www.addic7ed.com/) and [Index subtitles](https://subscene.cyou/) (not stable).
+1. load from provider — listed automatically when available
+2. load from file — you manually add a subtitle file that's on your device to play with the video
+3. load from Internet — using [OpenSubtitles](https://www.opensubtitles.com/) (login required), [Addic7ed](https://www.addic7ed.com/) and [Index subtitles](https://subscene.cyou/) (not stable).
 
 ![image](https://user-images.githubusercontent.com/57977673/194716636-f16fe137-c2e6-4529-bfd8-b86214ab8843.png)
 
 ===
-==- How to use Open subtitles
+==- How to use OpenSubtitles
 
-[!badge variant="dark" icon="gear" text="Settings"] → [!badge variant="dark" text="Account"] → [!badge variant="dark" icon="/static/osub.png" text="OpenSubtitles"] → **Login with username and password**
+[!badge variant="dark" icon="gear" text="Settings"] → [!badge variant="dark" text="Account"] → [!badge variant="dark" icon="/static/osub.png" text="OpenSubtitles"] → **Login with your username and password**
 
 ![image](https://user-images.githubusercontent.com/57977673/194716884-04860e09-7910-4216-bf26-52fbca4e0a86.png)
 
-!!! note Open Subtitles FAQ
-If you have more questions about open subtitles, you can go [here](/Integrations/OpenSubtitles.md)
+!!! note OpenSubtitles FAQ
+For more information, you can [read our OpenSubtitles FAQ](/Integrations/OpenSubtitles.md)
 !!!
 
 ===

@@ -31,6 +31,7 @@ order: 999
 4. Dramacool `Horis`
 5. Sflix bundle `English`
 6. ShowFlix `Indian languages`
+7. TamilYogi `Tamil`
 
 ### Livestreams
 1. IPTV-org (TV) `Multilingual`

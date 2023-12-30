@@ -16,7 +16,7 @@ ___
 
 [!badge variant="light" text="Step 3"] Go to **[!badge variant="dark" icon="static/base.png" text="Cloudstream"] → [!badge variant="dark" icon="static/gear.png" text="Settings"] → [!badge variant="dark" icon="" text="Extensions"] → [!badge variant="dark" icon="" text="Your installed Repository"]**, and install your desired extensions.
 
-[!badge variant="light" text="Step 4"] Go back to [!badge variant="dark" icon="home" text="Home"] and click the [!badge variant="dark" icon="filter" text="None"] button at the bottom right. Then select the catagory of the extension you have installed and select the extension.
+[!badge variant="light" text="Step 4"] Go back to [!badge variant="dark" icon="home" text="Home"] and click the [!badge variant="dark" icon="filter" text="None"] button at the bottom right. Then select the category of the extension you have installed and select the extension.
 
 [!embed](https://www.youtube-nocookie.com/embed/B_WmCAUCy2c)
 ___

@@ -5,7 +5,7 @@ order: 999
 ---
 
 # Using the template
-The easiest way to start developing is to fork our plugin template [plugin-template](https://github.com/recloudstream/TestPlugins).
+The easiest way to start developing is to fork our [plugin-template](https://github.com/recloudstream/TestPlugins).
 
 To get started:
 

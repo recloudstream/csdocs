@@ -16,13 +16,13 @@ order: 999
 1. Anichi `Hexated`
 2. Aniwave/9anime `Rowdycado`
 3. KronchEN/Kwunchwoll `Rowdycado`
-4. Aniwatch `English`
+4. HiAnime `Rowdycado`
 5. Kickassanime `Hexated`
 6. Allanime `English`
 7. Sorastream `Hexated`
 8. Yugenanime `Hexated`
 9. Animension `Storm`
-10. Gogo `English`
+10. Anitaku `Rowdycado`
 
 ### Asian Contents
 1. Sorastream `Hexated`

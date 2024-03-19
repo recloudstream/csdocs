@@ -8,7 +8,6 @@ Repositories contain all the website extensions. These repositories are built by
 
 Direct Install | Short Codes { class="compact" }
 :---: | :---:
-[!badge variant="secondary" icon="static/gb.png" text="English"](https://cutt.ly/6wyw1RnS) | `6wyw1RnS`
 [!badge variant="secondary" icon="static/world.png" text="Multilingual"](https://cutt.ly/Bwyw1S3k) | `Bwyw1S3k`
 [!badge variant="secondary" icon="static/jo.png" text="Arabic"](https://cutt.ly/Jwyw1ZiR) | `Jwyw1ZiR`
 [!badge variant="secondary" icon="static/world.png" text="Hexated"](https://cutt.ly/mwyw140i) | `mwyw140i`
@@ -20,7 +19,7 @@ Direct Install | Short Codes { class="compact" }
 [!badge variant="secondary" icon="static/18p.png" text="NSFW"](https://cutt.ly/Nwyw2nbE) | `Nwyw2nbE`
 [!badge variant="secondary" icon="static/ua.png" text="CakesTwix"](https://cutt.ly/gwyw2YuE) | `gwyw2YuE`
 [!badge variant="secondary" icon="static/fr.png" text="FStream"](https://cutt.ly/fstream) | `fstream`
-[!badge variant="secondary" icon="static/world.png" text="Avocado"](https://cutt.ly/aguaco) | `aguaco`
+[!badge variant="secondary" icon="static/world.png" text="Rowdycado"](https://cutt.ly/Rowdycado) | `Rowdycado`
 
 !!!info
 if you don't understand the name of a repository, the repository was named after the developer of that repository.

@@ -150,7 +150,7 @@ fun main() {
 
 ## **Regex:**
 
-When working with Regex I highly recommend using (regex101.com)[https://regex101.com/] (using the python flavor)
+When working with Regex I highly recommend using [regex101.com](https://regex101.com/) (using the python flavor)
 
 Press <kbd>Ctrl</kbd> + <kbd>U</kbd> 
 

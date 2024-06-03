@@ -4,10 +4,10 @@ order: 999
 icon: rocket
 ---
 Scraping is just downloading a webpage and getting the wanted information from it. 
-As a start you can scrape the README.md
+As a start, you can scrape the README.md
 
 
-I'll use khttp for the kotlin implementation because of the ease of use, if you want something company-tier I'd recommend OkHttp.
+I'll use khttp for the Kotlin implementation because of the ease of use, if you want something company-tier I'd recommend OkHttp.
 
 **Update**: I have made an okhttp wrapper **for android apps**, check out [NiceHttp](https://github.com/Blatzar/NiceHttp)
 
@@ -27,8 +27,8 @@ print(response.text)  # Prints the readme
 In build.gradle:
 ```gradle
 repositories {
-    mavenCentral()
-    jcenter()
+    maven central()
+    centre()
     maven { url 'https://jitpack.io' }
 }
 
@@ -47,7 +47,7 @@ fun main() {
 ```
 
 
-# **2. Getting the github project description** 
+# **2. Getting the GitHub project description** 
 Scraping is all about getting what you want in a good format you can use to automate stuff.
 
 Start by opening up the developer tools, using
@@ -60,32 +60,32 @@ or
 
 or 
 
-Right click and press *Inspect*
+Right-click and press *Inspect*
 
-In here you can look at all the network requests the browser is making and much more, but the important part currently is the HTML displayed. You need to find the HTML responsible for showing the project description, but how? 
+Here you can look at all the network requests the browser is making and much more, but the important part currently is the HTML displayed. You need to find the HTML responsible for showing the project description, but how? 
 
 Either click the small mouse in the top left of the developer tools or press 
 
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd> 
 
-This makes your mouse highlight any element you hover over. Press the description to highlight up the element responsible for showing it.
+This makes your mouse highlight any element you hover over. Press the description to highlight the element responsible for showing it.
 
 Your HTML will now be focused on something like:
 
 
-```html
+```HTML
 <p class="f4 mt-3">
       Work in progress tutorial for scraping streaming sites
 </p>
 ```
 
-Now there's multiple ways to get the text, but the 2 methods I always use is Regex and CSS selectors. Regex is basically a ctrl+f on steroids, you can search for anything. CSS selectors is a way to parse the HTML like a browser and select an element in it.
+Now there are multiple ways to get the text, but the 2 methods I always use are Regex and CSS selectors. Regex is a ctrl+f on steroids, you can search for anything. CSS selectors are a way to parse the HTML like a browser and select an element in it.
 
 ## CSS Selectors
 
 The element is a paragraph tag, eg `<p>`, which can be found using the CSS selector: "p".
 
-classes helps to narrow down the CSS selector search, in this case: `class="f4 mt-3"`
+classes help to narrow down the CSS selector search, in this case: `class="f4 mt-3"`
 
 This can be represented with 
 ```css
@@ -104,12 +104,12 @@ This prints:
 NodeList [p.f4.mt-3]
 ```
 
-### **NOTE**: You may not get the same results when scraping from command line, classes and elements are sometimes created by javascript on the site.
+### **NOTE**: You may not get the same results when scraping from the command line, classes and elements are sometimes created by javascript on the site.
 
 
 **Python**
 
-```python
+```Python
 import requests
 from bs4 import BeautifulSoup  # Full documentation at https://www.crummy.com/software/BeautifulSoup/bs4/doc/
 
@@ -125,8 +125,8 @@ print(element[0].text.strip())  # Selects the first element, gets the text and s
 In build.gradle:
 ```gradle
 repositories {
-    mavenCentral()
-    jcenter()
+    maven central()
+    centre()
     maven { url 'https://jitpack.io' }
 }
 
@@ -158,9 +158,9 @@ to get the whole site document as text and copy everything
 
 Paste it in the test string in regex101 and try to write an expression to only capture the text you want.
 
-In this case the elements is 
+In this case, the elements are 
 
-```html
+```HTML
 <p class="f4 mt-3">
       Work in progress tutorial for scraping streaming sites
     </p>
@@ -172,7 +172,7 @@ Maybe we can search for `<p class="f4 mt-3">` (backslashes for ")
 <p class=\"f4 mt-3\">
 ```
 
-Gives a match, so lets expand the match to all characters between the two brackets ( p>....</ )
+Gives a match, so let's expand the match to all characters between the two brackets ( p>....</ )
 Some important tokens for that would be:
 
 - `.*?` to indicate everything except a newline any number of times, but take as little as possible
@@ -204,7 +204,7 @@ import re  # regex
 
 url = "https://github.com/Blatzar/scraping-tutorial"
 response = requests.get(url)
-description_regex = r"<p class=\"f4 mt-3\">\s*(.*)?\s*<"  # r"" stands for raw, which makes blackslashes work better, used for regexes
+description_regex = r"<p class=\"f4 mt-3\">\s*(.*)?\s*<"  # r"" stands for raw, which makes backslashes work better, used for regexes
 description = re.search(description_regex, response.text).groups()[0]
 print(description)
 ```

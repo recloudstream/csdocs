@@ -437,8 +437,3 @@ fun main() {
     println(description)
 }
 ```
-="f4 mt-3">\s*(.*)?\s*<""")
-    val description = descriptionRegex.find(response.text)?.groups?.get(1)?.value
-    println(description)
-}
-```

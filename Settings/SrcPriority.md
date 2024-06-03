@@ -25,7 +25,7 @@ And all sources will be ordered like:
 4. Videos source B 1080p (Priority **4**)
 
 Your settings can be saved to different profiles to make it easy to sort differently depending on your network connection.
-In addition one profile can be set to default for WiFi and one profile for Mobile data, making it easier to load only the videos your network can
+In addition, one profile can be set to default for WiFi and one profile for Mobile data, making it easier to load only the videos your network can
 
 ![button placement](https://github.com/recloudstream/csdocs/assets/18114966/f4d2d8ab-6937-4e06-a777-80fa1c4d492c)
 

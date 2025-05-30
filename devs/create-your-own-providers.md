@@ -8,10 +8,10 @@ icon: repo
 
 Providers in CloudStream consists primarily of 4 different parts:
 
-- [Searching](https://recloudstream.github.io/dokka/-cloudstream/com.lagradost.cloudstream3/-main-a-p-i/index.html#498495168%2FFunctions%2F101969414)
-- [Loading the home page](https://recloudstream.github.io/dokka/-cloudstream/com.lagradost.cloudstream3/-main-a-p-i/index.html#1356482668%2FFunctions%2F101969414)
-- [Loading the show page](https://recloudstream.github.io/dokka/-cloudstream/com.lagradost.cloudstream3/-main-a-p-i/index.html#1671784382%2FFunctions%2F101969414)
-- [Loading the video links](https://recloudstream.github.io/dokka/-cloudstream/com.lagradost.cloudstream3/-main-a-p-i/index.html#-930139416%2FFunctions%2F101969414)
+- [Searching](https://recloudstream.github.io/dokka/library/com.lagradost.cloudstream3/-main-a-p-i/index.html#498495168%2FFunctions%2F-449184558)
+- [Loading the home page](https://recloudstream.github.io/dokka/library/com.lagradost.cloudstream3/-main-a-p-i/index.html#1356482668%2FFunctions%2F-449184558)
+- [Loading the result page](https://recloudstream.github.io/dokka/library/com.lagradost.cloudstream3/-main-a-p-i/index.html#1671784382%2FFunctions%2F-449184558)
+- [Loading the video links](https://recloudstream.github.io/dokka/library/com.lagradost.cloudstream3/-main-a-p-i/index.html#-930139416%2FFunctions%2F-449184558)
 
 When making a provider it is important that you are confident you can scrape the video links first!
 Video links are often the most protected part of the website and if you cannot scrape them then the provider is useless.
@@ -24,7 +24,7 @@ Looking at how some extensions work alongside reading this will likely help a lo
 
 ## 1. Searching
 
-This one is probably the easiest, based on a query you should return a list of [SearchResponse](https://recloudstream.github.io/dokka/app/com.lagradost.cloudstream3/-search-response/index.html)
+This one is probably the easiest, based on a query you should return a list of [SearchResponse](https://recloudstream.github.io/dokka/library/com.lagradost.cloudstream3/-search-response/index.html)
 
 Scraping the search results is essentially just finding the search item elements on the site (red box) and looking in them to find name, url and poster url and put the data in a SearchResponse.
 
@@ -51,7 +51,7 @@ private fun Element.toSearchResponse(): LiveSearchResponse? {
     // If no link element then it's no a valid search response
     val link = this.select("div.alternative a").last() ?: return null
     // fixUrl is a built in function to convert urls like /watch?v=..... to https://www.youtube.com/watch?v=.....
-    val href = fixUrl(link.attr("href"))
+    val href = link.attr("href")
     val img = this.selectFirst("div.thumb img")
     // Optional parameter, scraping languages are not required but might be nice on some sites
     val lang = this.selectFirst(".card-title > a")?.attr("href")?.removePrefix("?country=")
@@ -59,15 +59,15 @@ private fun Element.toSearchResponse(): LiveSearchResponse? {
         
     // There are many types of searchresponses but mostly you will be using AnimeSearchResponse, MovieSearchResponse
     // and TvSeriesSearchResponse, all with different parameters (like episode count)
-    return LiveSearchResponse(
+    return newLiveSearchResponse(
         // Kinda hack way to get the title
         img?.attr("alt")?.replaceFirst("Watch ", "") ?: return null,
         href,
-        this@EjaTv.name,
-        TvType.Live,
-        fixUrl(img.attr("src")),
-        lang = lang
-    )
+        TvType.Live
+    ) {
+        this.posterUrl = fixUrl(img.attr("src"))
+        this.lang = lang
+    }
 }
 ```
 
@@ -87,7 +87,7 @@ override val mainPage = mainPageOf(
 ```
 
 This dictates what the getMainPage function will be receiving as function arguments.
-Basically when the recent dubbed shows should be loaded the getMainPage gets called with a page number and the request you defined above.
+Basically when the recent dubbed media should be loaded the getMainPage gets called with a page number and the request you defined above.
 
 ```kotlin
 
@@ -141,9 +141,9 @@ responses when the user has scrolled to the end.
 TLDR: Exactly like searching but you defined your own queries.
 
 
-## 3. Loading the show page
+## 3. Loading the result page
 
-The show page is a bit more complex than search results, but it uses the same logic used to get search results: using CSS selectors and regex to parse html into a kotlin object. With the amount of info being parsed this function can get quite big, but the fundamentals are still pretty simple.
+The media result page is a bit more complex than search results, but it uses the same logic used to get search results: using CSS selectors and regex to parse html into a kotlin object. With the amount of info being parsed this function can get quite big, but the fundamentals are still pretty simple.
 The only difficultuy is getting the episodes, they are not always not part of the html. Check if any extra requests are sent in your browser when visiting the episodes page.
 
 **NOTE**: Episodes in CloudStream are not paginated, meaning that if you have a show with 21 seasons, all on different website pages you will need to parse them all. 
@@ -224,14 +224,14 @@ A function can look something like this:
                 val recUrl = fixUrlNull(titleHeader.attr("href")) ?: return@mapNotNull null
                 val recTitle = titleHeader.text() ?: return@mapNotNull null
                 val poster = element.select("div.film-poster > img").attr("data-src")
-                MovieSearchResponse(
+                newMovieSearchResponse(
                     recTitle,
                     recUrl,
-                    this.name,
                     if (recUrl.contains("/movie/")) TvType.Movie else TvType.TvSeries,
-                    poster,
-                    year = null
-                )
+                    false
+                ) {
+                    this.posterUrl = poster
+                }
             }
 
         if (isMovie) {

@@ -21,7 +21,7 @@ Direct Install | Short Codes { class="compact" }
 [!badge variant="secondary" icon="static/ua.png" text="CakesTwix"](https://cutt.ly/gwyw2YuE) | `gwyw2YuE`
 [!badge variant="secondary" icon="static/fr.png" text="FStream"](https://cutt.ly/fstream) | `fstream`
 [!badge variant="secondary" icon="static/world.png" text="Avocado"](https://cutt.ly/aguaco) | `aguaco`
-[!badge variant="secondary" icon="static/tr.png" text="Turkish"](https://cutt.ly/KekikAkademi) | `KekikAkademi`
+[!badge variant="secondary" icon="static/tr.png" text="Turkish"](https://cutt.ly/kekikdevam) | `kekikdevam`
 [!badge variant="secondary" icon="static/jo.png" text="Arabico"](https://cutt.ly/0wF96Vs1) | `0wF96Vs1`
 
 !!!info

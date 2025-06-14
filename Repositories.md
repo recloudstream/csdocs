@@ -10,6 +10,7 @@ Direct Install | Short Codes { class="compact" }
 :---: | :---:
 [!badge variant="secondary" icon="static/gb.png" text="English"](https://cutt.ly/6wyw1RnS) | `6wyw1RnS`
 [!badge variant="secondary" icon="static/world.png" text="Multilingual"](https://cutt.ly/Bwyw1S3k) | `Bwyw1S3k`
+[!badge variant="secondary" icon="static/world.png" text="Multilingual"](https://cutt.ly/qrQa38ja) | `cncv`
 [!badge variant="secondary" icon="static/jo.png" text="Arabic"](https://cutt.ly/Jwyw1ZiR) | `Jwyw1ZiR`
 [!badge variant="secondary" icon="static/world.png" text="Hexated"](https://cutt.ly/mwyw140i) | `mwyw140i`
 [!badge variant="secondary" icon="static/in.png" text="Likdev"](https://cutt.ly/bwyw0Mcv) | `bwyw0Mcv`

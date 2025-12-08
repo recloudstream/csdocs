@@ -27,3 +27,4 @@ Direct Install | Short Codes { class="compact" }
 !!!info
 if you don't understand the name of a repository, the repository was named after the developer of that repository.
 !!!!
+

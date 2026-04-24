@@ -1,4 +1,4 @@
----
+ https://raw.githubusercontent.com/NivinCNC/CNCVerse-Cloud-Stream-Extension/refs/heads/builds/CNC.json---
 label: Repositories
 icon: repo
 order: 1000

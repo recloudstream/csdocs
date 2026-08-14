@@ -3,7 +3,6 @@ label: Recommended Apps
 order: 998
 icon: thumbsup
 ---
-
 ## External Media Player
 
 [!badge variant="secondary" size="2xl" icon="/static/vlc.png" text="**VLC**"](https://play.google.com/store/apps/details?id=org.videolan.vlc&hl=en&gl=US)   [!badge variant="secondary" size="2xl" icon="/static/mpv.png" text="**MPV**"](https://play.google.com/store/apps/details?id=is.xyz.mpv&hl=en&gl=US)

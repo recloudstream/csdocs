@@ -5,8 +5,8 @@ icon: /static/api.png
 ---
 
 ### About
-Whilst scraping a site is always a nice option, using it's API is way better. <br/>
-And sometimes its the only way `(eg: the site uses its API to load the content, so scraping doesn't work)`.
+Whilst scraping a site is always a nice option, using its API is way better. <br/>
+And sometimes it's the only way `(eg: the site uses its API to load the content, so scraping doesn't work)`.
 
 Anyways, this guide won't teach the same concepts over and over again, <br/>
 so if you can't even make requests to an API then this will not tell you how to do that.
@@ -47,7 +47,7 @@ json = requests.get(url).json()
 }
 """
 ```
-Now, that is way too simple in python, sadly I am here to get your hopes down, and say that its not as simple in kotlin. <br/>
+Now, that is way too simple in python, sadly I am here to get your hopes down, and say that it's not as simple in kotlin. <br/>
 
 First of all, we are going to use a library named Jackson by FasterXML. <br/>
 In build.gradle:
@@ -155,7 +155,7 @@ data class Example (
 ```
 As you can see, `dog` and `fish` are nullable because they are properties that are missing in an item. <br/>
 Whilst `cat` is not nullable because it is available in all of the items. <br/>
-Basic nullable detection is implemented in [json2kt](https://www.json2kt.com/) so its recommended to use that. <br/>
+Basic nullable detection is implemented in [json2kt](https://www.json2kt.com/) so it's recommended to use that. <br/>
 But it is very likely that it might fail to detect some nullable types, so it's up to us to validate the generated code.
 
 Second step to parsing json is...to just call our `mapper` instance.

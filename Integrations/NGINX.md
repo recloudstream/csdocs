@@ -19,7 +19,7 @@ ___
 ### Why did I create that?
 
 I used to be a user of [jellyfin](https://jellyfin.org/) because I didn't want to pay for a subscription and I didn't want to use proprietary software just to display files like plex.
-It wasn't working really well and I sometimes wasn't able to play Movies and it semmed to use a lot of ressources
+It wasn't working really well and I sometimes wasn't able to play Movies and it seemed to use a lot of resources
 The solution? Scrape the media files and their metadata using Cloudstream-3
 
 The advantages of this provier over jellyfin are that it's lightweight and integrated with cloudstream
@@ -60,7 +60,7 @@ ___
 ### Setting up radarr / sonarr
 You must use a metadata downloader (that downloads `.nfo` files), I'll use radarr and sonarr since it's the easiest for me (it might be possible to download metadata using something else but I didn't try)
 
-To install radarr and sonarr go into your control pannel, under installers search for sonarr and radarr
+To install radarr and sonarr go into your control panel, under installers search for sonarr and radarr
 
 You now have to enable the download of metadata
 
@@ -92,11 +92,11 @@ ___
 ### In cloudstream
 Go into the settings of Cloudstream-3 and click the Nginx server url button
 
-Here you need to type the exact url of the http nginx server where you access your files, for exemple https://myusername.myles.usbx.me/
+Here you need to type the exact url of the http nginx server where you access your files, for example https://myusername.myles.usbx.me/
 
-The http access requires authentification, you have to go under Nginx Credentials and type your username and password.
+The http access requires authentication, you have to go under Nginx Credentials and type your username and password.
 
-Those credentials are written in the control pannel of ultra.cc under:
+Those credentials are written in the control panel of ultra.cc under:
 
 `Access details > HTTP proxy access`
 

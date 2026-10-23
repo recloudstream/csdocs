@@ -8,7 +8,7 @@ icon: play
 
 ## Opening a video in an external player
 
-[!badge variant="dark" icon="/static/base.png" text="Cloudstream"] → [!badge variant="dark" text="Episode page"] → **Press and hold the epsiode** → [!badge variant="dark" text="play in ABC player"]
+[!badge variant="dark" icon="/static/base.png" text="Cloudstream"] → [!badge variant="dark" text="Episode page"] → **Press and hold the episode** → [!badge variant="dark" text="play in ABC player"]
 
 !!!info
 If the player is not in the pop up list, Click [!badge variant="dark" text="play in browser"]. It should prompt all the available options including your desired player. You can also copy the video link and stream it in the [!badge variant="dark" text="Network stream"] or the [!badge variant="dark" text="Stream"] option in your player. 

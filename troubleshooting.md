@@ -44,9 +44,9 @@ Clear the app cache and restart the app. You can also set a lower amount cache t
 ===
 
 ==- Subtitles casting issue
-If subtitle isn't casting on the tv with the native casting system., try casting using [this app](https://play.google.com/store/apps/details?id=com.instantbits.cast.webvideo).
+If subtitle isn't casting on the tv with the native casting system, try casting using [this app](https://play.google.com/store/apps/details?id=com.instantbits.cast.webvideo).
 
-[!badge variant="dark" icon="/static/base.png" text="Cloudstream"] → [!badge variant="dark" text="Episode page"] → **Press and hold the epsiode** → [!badge variant="dark" text="play with Web Video Cast"] → **choose the link and then cast.** *The subtitle selection maybe not as good as cs3.*
+[!badge variant="dark" icon="/static/base.png" text="Cloudstream"] → [!badge variant="dark" text="Episode page"] → **Press and hold the episode** → [!badge variant="dark" text="play with Web Video Cast"] → **choose the link and then cast.** *The subtitle selection may not be as good as cs3.*
 ===
 
 ## Sorastream
@@ -116,7 +116,7 @@ Try 1DM to download from Sorastream
 You can change it back to 3, if it makes no difference
 !!!
 
-6. Then in CMD (Run as Adminstrator), paste:
+6. Then in CMD (Run as Administrator), paste:
 ```cmd
 bcdedit /set hypervisorlaunchtype auto
 ```

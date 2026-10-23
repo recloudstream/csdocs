@@ -21,11 +21,11 @@ This is very easy to bypass. You can either right click the offending line (in c
 
 **2.**
 Attaching a custom `.toString()` function to an expression and printing it with `console.log()`.
-When devtools are open (even while not in console) all `console.log()` calls will be resloved and the custom `.toString()` function will be called. Functions can also be triggered by how dates, regex and functions are formatted in the console.
+When devtools are open (even while not in console) all `console.log()` calls will be resolved and the custom `.toString()` function will be called. Functions can also be triggered by how dates, regex and functions are formatted in the console.
 
 This lets the site know the millisecond you bring up devtools. Doing `const console = null` and other js hacks have not worked for me (the console function gets cached by the detector). 
 
-If you can find the offending js responsible for the detection you can bypass it by redifining the function in violentmonkey, but I recommend against it since it's often hidden and obfuscated. The best way to bypass this issue is to re-compile firefox or chrome with a switch to disable the console.
+If you can find the offending js responsible for the detection you can bypass it by redefining the function in violentmonkey, but I recommend against it since it's often hidden and obfuscated. The best way to bypass this issue is to re-compile firefox or chrome with a switch to disable the console.
 
 **3.**
 Running a `while (true) {}` loop when the debugger object is present? Looks something like this in the wild:

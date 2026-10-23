@@ -62,6 +62,6 @@ In this case fvs.io redirected to the mp4 link, now do the same steps for the fv
 
 You pretty much only have 3 options when that happens:
 
-1. Try to use a fake / no captcha token. Some sites actually doesn't check that the captcha token is valid.
+1. Try to use a fake / no captcha token. Some sites actually don't check that the captcha token is valid.
 2. Use Webview or some kind of browser in the background to load the site in your stead.
 3. Pray it's a captcha without payload, then it's possible to get the captcha key without a browser: [Code example](https://github.com/recloudstream/cloudstream/blob/ccb38542f4b5685e511824a975bf16190011c222/app/src/main/java/com/lagradost/cloudstream3/MainAPI.kt#L132-L181)

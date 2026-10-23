@@ -6,7 +6,7 @@ icon: link
 
 
 !!!Success Use cases
-- Stream from the sources that doesn't support stream/ not in CS3
+- Stream from the sources that don't support stream/ not in CS3
 - Stream from Index Sites
 - Stream Youtube videos
 - Stream m3u streams (example: IPTVs)
